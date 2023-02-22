@@ -1,4 +1,4 @@
-import {Inter,Roboto_Mono,Fraunces,Cormorant} from '@next/font/google';
+import {Inter,Roboto_Mono,Fraunces,Cormorant,Montserrat} from '@next/font/google';
 import localFont from '@next/font/local';
 
 export const inter=Inter({subsets:['latin'],display:'swap'});
@@ -11,4 +11,11 @@ export const cormorant=Cormorant({subsets:['latin'],display:'swap', variable:'--
 
 // local fonts
 export const signika=localFont({src:'./local-fonts/signika.ttf',style:'italic'})
+
+
+// fonts with tailwindcss 
+export const montserrat=Montserrat({
+    display: 'swap', 
+    variable: '--font-montserrat',
+});
 

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import "@total-typescript/ts-reset";
 
-import { roboto_mono,signika } from './fonts';
+import { montserrat, roboto_mono,signika } from './fonts';
 
 import styles from './page.module.css'
 import variablesScss from './variables.module.scss';
@@ -15,6 +15,7 @@ export default function Home() {
       <div className={styles.description}>
         <h1>Cormorant font test</h1>
         <h3 className={signika.className}>Signika local font</h3>
+        <h4 className={montserrat.variable}>Montserrat font with tailwindcss variable</h4>
         <p className='text-cyan-600 font-bold underline'>
           Get started by editing&nbsp;
           <code className={styles.code} style={{color:variablesScss.primaryColor}}>app/page.tsx</code>
