@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <h1>Cormorant font test</h1>
         <p className='text-cyan-600 font-bold underline'>
           Get started by editing&nbsp;
           <code className={styles.code} style={{color:variablesScss.primaryColor}}>app/page.tsx</code>
