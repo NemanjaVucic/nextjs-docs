@@ -1,3 +1,4 @@
+import { inter } from './fonts'
 import './globals.css'
 
 export default function RootLayout({
@@ -6,7 +7,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    // set fonts globally
+    <html lang="en" className={inter.className}>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head

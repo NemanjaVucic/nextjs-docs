@@ -1,13 +1,13 @@
 
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 
 import "@total-typescript/ts-reset";
+
+import { roboto_mono } from './fonts';
 
 import styles from './page.module.css'
 import variablesScss from './variables.module.scss';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -57,10 +57,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={inter.className}>
+          <h2 className={roboto_mono.className}>
             Docs <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>
+          <p className={roboto_mono.className}>
             Find in-depth information about Next.js features and API.
           </p>
         </a>
@@ -71,10 +71,11 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={inter.className}>
+          {/* set fonts as needed */}
+          <h2 className={roboto_mono.className}>
             Templates <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
+          <p className={roboto_mono.className}>Explore the Next.js 13 playground.</p>
         </a>
 
         <a
@@ -83,10 +84,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={inter.className}>
+          <h2 className={roboto_mono.className}>
             Deploy <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>
+          <p className={roboto_mono.className}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
